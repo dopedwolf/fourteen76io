@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "fourteen76",
+    "description": "The Official Fourteen76 App",
+    "slug": "fourteen76",
+    "privacy": "public",
+    "sdkVersion": "20.0.0",
+    "version": "1.0.0",
+    "primaryColor": "#cccccc",
+    "orientation": "portrait",
+    "icon": "./assets/icons/icon.png",
+    "androidStatusBar": {
+      "backgroundColor": "#f2b1bd"
+    },
+    "android": {
+      "package": "com.fourteen76.fourteen76"
+    },
+    "loading": {
+      "icon": "./assets/icons/load-icon.png",
+      "backgroundColor": "#f2b1bd"
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.fourteen76.fourteen76",
+      "supportsTablet": true,
+    }
+  }
+}
