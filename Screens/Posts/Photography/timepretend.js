@@ -7,7 +7,7 @@ class TimePretend extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.pieceTitle}>
               <Text style={Cstyles.photoSeriesTitle}>{"Time to Pretend"}</Text>

@@ -35,7 +35,7 @@ class PopMenu extends React.Component {
               <Text style={Cstyles.popMenuItems}>!Else¡</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => Actions.contact()}>
-              <Text style={Cstyles.popMenuItems}>Contact Us</Text>
+              <Text style={Cstyles.popMenuItemsS}>Submit</Text>
             </TouchableOpacity>
           </View>
         </View>

@@ -33,7 +33,7 @@ class ArtistsThree extends React.Component {
     }
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.pageContainer}>
             <TouchableOpacity activeOpacity={1} onPress={() => Actions.kat()} style={Cstyles.postTouchable}>
               <View style={Cstyles.postContainer}>

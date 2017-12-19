@@ -7,7 +7,7 @@ class Erotica extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.photoSeriesPage}>
             <Image source={require('../../../assets/images/else/chromacovehead.jpg')} style={Cstyles.articleHeadImage}/>
             <View style={Cstyles.articleBody}>

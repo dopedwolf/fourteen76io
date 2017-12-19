@@ -6,7 +6,7 @@ class Marriage extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.headPhotoContainer}>
               <Image source={require('../../../assets/images/music/marriage.jpg')} style={Cstyles.articleHeadImage}/>

@@ -7,7 +7,7 @@ class Contact extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.pageContainer}>
             <View style={Cstyles.contactPage}>
               <View style={Cstyles.submitContainer}>

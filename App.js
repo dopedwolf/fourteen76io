@@ -65,8 +65,8 @@ export default class App extends React.Component {
           {'Alegreya-BoldItalic': require('./assets/fonts/Alegreya-BoldItalic.ttf')},
           {'Alegreya-italic': require('./assets/fonts/Alegreya-Italic.ttf')},
           {'Alegreya-regular': require('./assets/fonts/Alegreya-Regular.ttf')},
-          {'BreeSerif-regular': require('./assets/fonts/BreeSerif-Regular.ttf')},
-          {'BreeSerif-Italic': require('./assets/fonts/BreeSerifItalic.otf')},
+          {'LoraBold': require('./assets/fonts/Lora-Bold.ttf')},
+          {'LoraBoldItalic': require('./assets/fonts/Lora-BoldItalic.ttf')},
       ]);
       await Promise.all([
         ...imageAssets,

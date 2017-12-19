@@ -27,13 +27,13 @@ class Home extends React.Component {
     if(error){
       return(
         <View style={Cstyles.container}>
-          <Text>Error loading Events!</Text>
+          <Text>Error loading Posts!</Text>
         </View>
       )
     }
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.pageContainer}>
               <TouchableOpacity activeOpacity={1} onPress={() => Actions.timepretend()} style={Cstyles.postTouchable}>
                 <View style={Cstyles.postContainer}>

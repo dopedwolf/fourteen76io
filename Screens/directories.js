@@ -6,7 +6,7 @@ class Directories extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <Text>Directories</Text>
         </ScrollView>
     </View>

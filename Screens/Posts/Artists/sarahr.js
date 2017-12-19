@@ -7,7 +7,7 @@ class Sarah extends React.Component {
   render() {
     return (
       <View style={Cstyles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.pieceTitleAbove}>
               <Text style={Cstyles.photoSeriesTitle}>{"Sarah C. Rehmert"}</Text>
