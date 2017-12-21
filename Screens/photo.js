@@ -47,6 +47,30 @@ class Photo extends React.Component {
                 </View>
               </View>
             </TouchableOpacity>
+            <TouchableOpacity activeOpacity={1} onPress={() => Actions.snow()} style={Cstyles.postTouchable}>
+              <View style={Cstyles.postContainer}>
+                <Image source={require('../assets/images/photography/snowthumb.jpg')} style={Cstyles.postImage}/>
+                <View style={Cstyles.subPostContainer}>
+                  <Text style={Cstyles.postTitle}>{"Snow Day"}</Text>
+                  <View style={Cstyles.postSub}>
+                    <Text style={Cstyles.postSubCat}>{"Mateo Montoya"}</Text>
+                    <Text style={Cstyles.postSubCat}>{"Photo Story"}</Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={1} onPress={() => Actions.twelve()} style={Cstyles.postTouchable}>
+              <View style={Cstyles.postContainer}>
+                <Image source={require('../assets/images/photography/twelve/twelvethumb.jpg')} style={Cstyles.postImage}/>
+                <View style={Cstyles.subPostContainer}>
+                  <Text style={Cstyles.postTitle}>{"Twelve Weeks of Winter"}</Text>
+                  <View style={Cstyles.postSub}>
+                    <Text style={Cstyles.postSubCat}>{"Antonio Rodriguez"}</Text>
+                    <Text style={Cstyles.postSubCat}>{"Photo Story"}</Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
             <TouchableOpacity activeOpacity={1} onPress={() => Actions.gon()} style={Cstyles.postTouchable}>
               <View style={Cstyles.postContainer}>
                 <Image source={require('../assets/images/gon.jpg')} style={Cstyles.postImage}/>

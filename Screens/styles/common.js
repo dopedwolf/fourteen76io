@@ -292,7 +292,7 @@ const Cstyles = StyleSheet.create({
     alignItems: 'center',
   },
   photoSeriesTitle: {
-    fontSize: 23,
+    fontSize: 25,
     textAlign: 'center',
     paddingLeft: 12,
     paddingRight: 12,
@@ -386,8 +386,8 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 10,
-    fontSize: 17.5,
-    fontFamily: 'Alegreya-regular',
+    fontSize: 17,
+    fontFamily: 'Georgia',
   },
   articleBodyContentHeading: {
     paddingLeft: 10,
@@ -423,7 +423,7 @@ const Cstyles = StyleSheet.create({
     paddingBottom: 10,
     fontSize: 17.5,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-italic',
+    fontFamily: 'Georgia-Italic',
   },
   articleBodyItilizedBold: {
     marginTop: -7,
@@ -432,7 +432,7 @@ const Cstyles = StyleSheet.create({
     paddingBottom: 10,
     fontSize: 17.5,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-BoldItalic',
+    fontFamily: 'Georgia-BoldItalic',
   },
   quote: {
     paddingBottom: 15,
@@ -444,7 +444,7 @@ const Cstyles = StyleSheet.create({
     alignSelf: 'center',
     fontSize: 17.5,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-italic',
+    fontFamily: 'Georgia-Italic',
   },
   loadMore: {
     height: 30,

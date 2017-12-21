@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "fourteen76",
-    "description": "The Official Fourteen76 App",
+    "name": "Fourteen76",
+    "description": "Fourteen76 showcases the intersectional talent and news hidden in the cracks of Birmingham and surrounding areas. While providing a hub for complete artistic expression and attempting to close the wide gap between the art scene and the community.",
     "slug": "fourteen76",
     "privacy": "public",
     "sdkVersion": "20.0.0",
     "version": "1.0.0",
-    "primaryColor": "#cccccc",
+    "primaryColor": "#f9f9f9",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
     "androidStatusBar": {

@@ -32,6 +32,7 @@ import Pho from '../Screens/Posts/Articles/pho';
 import Lewis from '../Screens/Posts/Articles/lewis';
 import Blood from '../Screens/Posts/Articles/blood';
 //Music
+import Shame from '../Screens/Posts/Music/shame';
 import Psychic from '../Screens/Posts/Music/psychic';
 import SleepDrive from '../Screens/Posts/Music/sleepdrive';
 import Balloons from '../Screens/Posts/Music/deadballoons'
@@ -40,6 +41,7 @@ import Marriage from '../Screens/Posts/Music/marriage';
 import Gag from '../Screens/Posts/Music/gag';
 import LaundryPunk from '../Screens/Posts/Music/laundrypunk';
 import Ygt from '../Screens/Posts/Music/ygt';
+import Girlpool from '../Screens/Posts/Music/girlpool';
 //Artists
 import Merrilee from '../Screens/Posts/Artists/merrilee';
 import Amy from '../Screens/Posts/Artists/amy';
@@ -98,7 +100,9 @@ import Womensmarch from '../Screens/Posts/Photography/womensmarch';
 import Yoavpelli from '../Screens/Posts/Photography/yoavpelli';
 import Zine from '../Screens/Posts/Photography/zine';
 import TimePretend from '../Screens/Posts/Photography/timepretend';
-
+import Snow from '../Screens/Posts/Photography/snow';
+import CindyWilson from '../Screens/Posts/Music/cindy';
+import TwelveWeeks from '../Screens/Posts/Photography/twelve';
 
 const MainApp = () => {
   return (
@@ -191,7 +195,12 @@ const MainApp = () => {
           <Scene key="pho" component={Pho} navBar={popMenuTab} direction="vertical"/>
           <Scene key="lewis" component={Lewis} navBar={popMenuTab} direction="vertical"/>
           <Scene key="carrigans" component={Carrigans} navBar={popMenuTab} direction="vertical"/>
-      </Modal>
+          <Scene key="girlpool" component={Girlpool} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="snow" component={Snow} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="shame" component={Shame} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="cindy" component={CindyWilson} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="twelve" component={TwelveWeeks} navBar={popMenuTab} direction="vertical"/>
+        </Modal>
     </Router>
   );
 };

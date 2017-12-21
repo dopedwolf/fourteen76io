@@ -35,6 +35,42 @@ class Music extends React.Component {
       <View style={Cstyles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.pageContainer}>
+            <TouchableOpacity activeOpacity={1} onPress={() => Actions.shame()} style={Cstyles.postTouchable}>
+              <View style={Cstyles.postContainer}>
+                <Image source={require('../assets/images/music/shamethumb.jpg')} style={Cstyles.postImage}/>
+                <View style={Cstyles.subPostContainer}>
+                  <Text style={Cstyles.postTitle}>{"Shame"}</Text>
+                  <View style={Cstyles.postSub}>
+                    <Text style={Cstyles.postSubCat}>{"Elliott Moe"}</Text>
+                    <Text style={Cstyles.postSubCat}>{"Music"}</Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={1} onPress={() => Actions.cindy()} style={Cstyles.postTouchable}>
+              <View style={Cstyles.postContainer}>
+                <Image source={require('../assets/images/music/cindythumb.jpg')} style={Cstyles.postImage}/>
+                <View style={Cstyles.subPostContainer}>
+                  <Text style={Cstyles.postTitle}>{"Cindy Wilson"}</Text>
+                  <View style={Cstyles.postSub}>
+                    <Text style={Cstyles.postSubCat}>{"Blake Ells"}</Text>
+                    <Text style={Cstyles.postSubCat}>{"Interview"}</Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={1} onPress={() => Actions.girlpool()} style={Cstyles.postTouchable}>
+              <View style={Cstyles.postContainer}>
+                <Image source={require('../assets/images/music/girlpoolthumb.jpg')} style={Cstyles.postImage}/>
+                <View style={Cstyles.subPostContainer}>
+                  <Text style={Cstyles.postTitle}>{"Girlpool"}</Text>
+                  <View style={Cstyles.postSub}>
+                    <Text style={Cstyles.postSubCat}>{"Blake Ells"}</Text>
+                    <Text style={Cstyles.postSubCat}>{"Interview"}</Text>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
             <TouchableOpacity activeOpacity={1} onPress={() => Actions.ytg()} style={Cstyles.postTouchable}>
               <View style={Cstyles.postContainer}>
                 <Image source={require('../assets/images/music/ygt/home.jpg')} style={Cstyles.postImage}/>

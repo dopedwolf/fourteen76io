@@ -47,6 +47,54 @@ class Home extends React.Component {
                   </View>
                 </View>
               </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} onPress={() => Actions.shame()} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/music/shamethumb.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Shame"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"Elliott Moe"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"Music"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} onPress={() => Actions.snow()} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/photography/snowthumb.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Snow Day"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"Mateo Montoya"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"Photo Story"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} onPress={() => Actions.cindy()} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/music/cindythumb.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Cindy Wilson"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"Blake Ells"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"Interview"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} onPress={() => Actions.twelve()} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/photography/twelve/twelvethumb.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Twelve Weeks of Winter"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"Antonio Rodriguez"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"Photo Story"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
               <TouchableOpacity activeOpacity={1} onPress={() => Actions.blood()} style={Cstyles.postTouchable}>
                 <View style={Cstyles.postContainer}>
                   <Image source={require('../assets/images/else/blood/bloodhome.jpg')} style={Cstyles.postImage}/>
