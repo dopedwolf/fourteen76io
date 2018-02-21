@@ -114,27 +114,29 @@ class Calendar extends React.Component {
           </View>
         )
       } return (
-        <View style={Cstyles.pageContainer}>
+        <View style={Cstyles.container}>
           <ScrollView showsVerticalScrollIndicator={false}>
-            <View style={Cstyles.filter}>
-              <View style={Cstyles.calendarFiltering}>
-                <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.oneFilter}]}>
-                  <TouchableOpacity onPress={this.allFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText1}]}>All</Text></TouchableOpacity>
+            <View style={Cstyles.pageContainer}>
+              <View style={Cstyles.filter}>
+                <View style={Cstyles.calendarFiltering}>
+                  <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.oneFilter}]}>
+                    <TouchableOpacity onPress={this.allFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText1}]}>All</Text></TouchableOpacity>
+                  </View>
+                  <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.twoFilter}]}>
+                    <TouchableOpacity onPress={this.artsFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText2}]}>Arts</Text></TouchableOpacity>
+                  </View>
                 </View>
-                <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.twoFilter}]}>
-                  <TouchableOpacity onPress={this.artsFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText2}]}>Arts</Text></TouchableOpacity>
+                <View style={Cstyles.calendarFiltering}>
+                  <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.threeFilter}]}>
+                    <TouchableOpacity onPress={this.musicFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText3}]}>Music</Text></TouchableOpacity>
+                  </View>
+                  <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.fourFilter}]}>
+                    <TouchableOpacity onPress={this.communityFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText4}]}>Community</Text></TouchableOpacity>
+                  </View>
                 </View>
               </View>
-              <View style={Cstyles.calendarFiltering}>
-                <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.threeFilter}]}>
-                  <TouchableOpacity onPress={this.musicFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText3}]}>Music</Text></TouchableOpacity>
-                </View>
-                <View style={[Cstyles.calendarFilter, {backgroundColor: this.state.fourFilter}]}>
-                  <TouchableOpacity onPress={this.communityFilter}><Text style={[Cstyles.filterText, {color: this.state.filterText4}]}>Community</Text></TouchableOpacity>
-                </View>
-              </View>
+              <CalendarEvent data={this.state.data}/>
             </View>
-            <CalendarEvent data={this.state.data}/>
           </ScrollView>
         </View>
       );

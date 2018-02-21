@@ -6,6 +6,7 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
 const quarterHeight = (height / 4);
+const sliderHeight = (height / 2);
 const halfWidth = (width / 2);
 const postWidth = (width / 1.12);
 const postWidthTwo = (width / 1.07);
@@ -119,9 +120,14 @@ const Cstyles = StyleSheet.create({
     height: 25,
     width: 25,
   },
-  menuItemPop: {
+  menuItemP: {
     height: 30,
     width: 30,
+    paddingBottom: 5,
+  },
+  menuItemPop: {
+    height: 35,
+    width: 35,
     marginRight: 18,
     marginLeft: 18,
   },
@@ -184,9 +190,10 @@ const Cstyles = StyleSheet.create({
   },
   eventType: {
     alignSelf: "flex-end",
-    fontSize: 11,
+    fontSize: 10,
     fontFamily: "LoraBold",
     marginTop: -5,
+    marginBottom: 10,
     marginRight: 0,
     color: "#b1aeae",
   },
@@ -245,7 +252,7 @@ const Cstyles = StyleSheet.create({
     paddingRight: 2,
     fontSize: 15,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'Georgia',
   },
   postSubCat: {
     marginTop: 5,
@@ -281,6 +288,7 @@ const Cstyles = StyleSheet.create({
   },
   imageSliderP: {
     backgroundColor: "#f9f9f9",
+    marginTop: 10,
     marginBottom: 10,
   },
   pieceTitle: {
@@ -314,16 +322,16 @@ const Cstyles = StyleSheet.create({
   },
   photoSeriesSubTitle: {
     color: "#1E1E1E",
-    fontSize: 11.5,
+    fontSize: 13,
     fontFamily: 'LoraBold',
   },
   photoSeriesSubTitleAuthor: {
     color: "#1E1E1E",
-    fontSize: 11.5,
+    fontSize: 13,
     fontFamily: 'LoraBold',
   },
   photoSeriesSubTitlePhotographer: {
-    fontSize: 11.5,
+    fontSize: 13,
     marginTop: 5,
     color: "#1E1E1E",
     fontFamily: 'LoraBold',
@@ -336,7 +344,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     color: "#1E1E1E",
     alignSelf: 'center',
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'LoraBold',
   },
   photoSeriesDescription: {
     lineHeight: 29,
@@ -346,10 +354,10 @@ const Cstyles = StyleSheet.create({
     marginTop: 15,
     fontSize: 17.5,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'Georgia',
   },
   photoSeriesPage: {
-    marginTop: 20,
+    marginTop: 30,
     marginBottom: 100,
   },
   articleHeadImage: {
@@ -403,7 +411,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 10,
-    fontSize: 16,
+    fontSize: 16.5,
     color: "#1E1E1E",
     fontFamily: 'LoraBold',
   },
@@ -412,7 +420,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 10,
-    fontSize: 16,
+    fontSize: 16.5,
     color: "#1E1E1E",
     fontFamily: 'LoraBoldItalic',
   },
@@ -421,7 +429,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 10,
-    fontSize: 17.5,
+    fontSize: 17,
     color: "#1E1E1E",
     fontFamily: 'Georgia-Italic',
   },
@@ -430,7 +438,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 25,
     paddingRight: 25,
     paddingBottom: 10,
-    fontSize: 17.5,
+    fontSize: 17,
     color: "#1E1E1E",
     fontFamily: 'Georgia-BoldItalic',
   },
@@ -442,7 +450,7 @@ const Cstyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     alignSelf: 'center',
-    fontSize: 17.5,
+    fontSize: 17,
     color: "#1E1E1E",
     fontFamily: 'Georgia-Italic',
   },
@@ -549,7 +557,7 @@ const Cstyles = StyleSheet.create({
     fontSize: 15,
     marginBottom: 13,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'Georgia',
   },
   submitIncludeEndOne: {
     lineHeight: 29,
@@ -558,7 +566,7 @@ const Cstyles = StyleSheet.create({
     marginTop: 5,
     marginBottom: 5,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'Georgia',
   },
   submitIncludeEnd: {
     lineHeight: 29,
@@ -566,7 +574,35 @@ const Cstyles = StyleSheet.create({
     fontSize: 15,
     marginBottom: 10,
     color: "#1E1E1E",
-    fontFamily: 'Alegreya-regular',
+    fontFamily: 'Georgia',
+  },
+  weareone_link: {
+    fontFamily: 'LoraBold',
+    marginTop: 15,
+    marginBottom: 45,
+    fontSize: 30,
+    color: "#f2b1bd",
+  },
+  slogan: {
+    width: width,
+    marginBottom: 30,
+  },
+  slogan_text_top: {
+    marginLeft: 10,
+    fontSize: 15.5,
+    marginTop: 5,
+    fontFamily: 'Alegreya-BoldItalic',
+    textAlign: 'left',
+  },
+  slogan_text_bottom: {
+    marginRight: 10,
+    marginTop: 5,
+    fontSize: 15.5,
+    fontFamily: 'Alegreya-BoldItalic',
+    textAlign: 'right',
+  },
+  pink: {
+    color: "#f2b1bd",
   },
 });
 

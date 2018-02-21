@@ -90,17 +90,6 @@ class ArtistsThree extends React.Component {
                   </View>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity activeOpacity={1} onPress={() => Actions.reins()} style={Cstyles.postTouchable}>
-                <View style={Cstyles.postContainer}>
-                  <Image source={require('../assets/images/artists/reins.jpg')} style={Cstyles.postImage}/>
-                  <View style={Cstyles.subPostContainer}>
-                    <Text style={Cstyles.postTitle}>{"Reins Tarpley"}</Text>
-                    <View style={Cstyles.postSub}>
-                      <Text style={Cstyles.postSubCat}>{"Artist"}</Text>
-                    </View>
-                  </View>
-                </View>
-              </TouchableOpacity>
               <TouchableOpacity activeOpacity={1} onPress={() => Actions.lucy()} style={Cstyles.postTouchable}>
                 <View style={Cstyles.postContainer}>
                   <Image source={require('../assets/images/artists/lucy.jpg')} style={Cstyles.postImage}/>

@@ -1,8 +1,7 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity, ScrollView, Linking} from 'react-native';
 import Cstyles from '../../styles/common';
-import ImageSlider from 'react-native-image-slider';
-
+import ImageSlider from '../../Slider/slider';
 class Chris extends React.Component {
   render() {
     return (
@@ -11,7 +10,6 @@ class Chris extends React.Component {
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.pieceTitleAbove}>
               <Text style={Cstyles.photoSeriesTitle}>{"C.D. Sacco"}</Text>
-                <Text style={Cstyles.photoSeriesSubTitleAuthor}>Interview by Jonathan Patrick</Text>
                 <Text style={Cstyles.photoSeriesSubTitlePhotographer}>Photography by Devin Lunsford</Text>
             </View>
             <View style={Cstyles.headPhotoContainer}>

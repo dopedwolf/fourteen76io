@@ -8,7 +8,7 @@ class popMenuTab extends React.Component {
     return (
       <View style={Cstyles.popMenu}>
         <TouchableOpacity onPress={() => Actions.pop()}>
-          <Image source={require('../assets/icons/exit2.png')} style={Cstyles.menuItem}/>
+          <Image source={require('../assets/icons/exit2.png')} style={Cstyles.menuItemP}/>
         </TouchableOpacity>
     </View>
     );

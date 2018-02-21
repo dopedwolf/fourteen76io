@@ -1,8 +1,7 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity, ScrollView, Linking} from 'react-native';
 import Cstyles from '../../styles/common';
-import ImageSlider from 'react-native-image-slider';
-
+import ImageSlider from '../../Slider/slider';
 class Byron extends React.Component {
   render() {
     return (
@@ -11,7 +10,6 @@ class Byron extends React.Component {
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.pieceTitleAbove}>
               <Text style={Cstyles.photoSeriesTitle}>{"Byron Sonnier"}</Text>
-              <Text style={Cstyles.photoSeriesSubTitleAuthor}>Interview by Jonathan Patrick</Text>
             </View>
             <View style={Cstyles.headPhotoContainer}>
               <Image source={require('../../../assets/images/artists/byron_1.jpg')} style={Cstyles.articleHeadImagePortrait}/>

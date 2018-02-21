@@ -1,8 +1,7 @@
 import React from 'react';
 import Expo from 'expo';
 import { Platform, StatusBar, StyleSheet, Text, View } from 'react-native';
-import {Font} from 'expo';
-import AppLoading from './Screens/loading';
+import {Font, AppLoading} from 'expo';
 import MainApp from './Navigation/router';
 
 
@@ -29,7 +28,13 @@ export default class App extends React.Component {
   }
   render() {
     if (!this.state.appIsReady) {
-      return <AppLoading />;
+      return (
+        <AppLoading
+          startAsync={this._loadAssestsAsync}
+          onFinish={() => this.setState({ isReady: true })}
+          onError={console.warn}
+        />
+    );
     } else {
       return (
           <View style={styles.container}>
@@ -43,7 +48,8 @@ export default class App extends React.Component {
   }
   async _loadAssestsAsync() {
       const imageAssets = cacheImages([
-        require('./assets/gifs/vladsplit.gif'),
+        require('./assets/gifs/vlad.png'),
+        require('./assets/gifs/vladsplit.svg'),
         require('./assets/icons/calendar.png'),
         require('./assets/icons/exit2.png'),
         require('./assets/icons/home.png'),
@@ -72,11 +78,6 @@ export default class App extends React.Component {
         ...imageAssets,
         ...fontAssets,
       ]);
-      // setTimeout(
-      //   () => {
-      //     this.setState({appIsReady: true})
-      //   }, 10000)
-
       this.setState({appIsReady: true});
   }
 }

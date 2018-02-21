@@ -14,7 +14,6 @@ import ArtistsTwo from '../Screens/artiststwo';
 import ArtistsThree from '../Screens/artiststhree';
 import ArtistsFour from '../Screens/artistsfour';
 import Photo from '../Screens/photo';
-import Food from '../Screens/food';
 import Music from '../Screens/music';
 import MusicTwo from '../Screens/musictwo'
 import Directories from '../Screens/directories';
@@ -22,15 +21,19 @@ import ElsePage from '../Screens/else';
 import PhotoTwo from '../Screens/phototwo';
 import PhotoThree from '../Screens/photothree';
 import PhotoFour from '../Screens/photofour';
+import Tattoo from '../Screens/Posts/Tattoo/home';
 import Contact from '../Screens/contact';
+//other
+import AaronTat from '../Screens/Posts/Tattoo/sanctum/aaron';
+import JustinTat from '../Screens/Posts/Tattoo/sanctum/justin';
+import DaveTat from '../Screens/Posts/Tattoo/triple/dave';
+import RizzoTat from '../Screens/Posts/Tattoo/triple/rizzo';
+import Sanctum from '../Screens/Posts/Tattoo/sanctum/sanctum';
+import Triple from '../Screens/Posts/Tattoo/triple/triple';
+import WeAreOne from '../Screens/other/weareone';
 //Articles
 import UpperRoom from '../Screens/Posts/Articles/upperRoom';
-import Erotica from '../Screens/Posts/Articles/erotica';
-import Carrigans from '../Screens/Posts/Articles/carrigans';
-import Heirloom from '../Screens/Posts/Articles/heirloom';
-import Pho from '../Screens/Posts/Articles/pho';
 import Lewis from '../Screens/Posts/Articles/lewis';
-import Blood from '../Screens/Posts/Articles/blood';
 //Music
 import Shame from '../Screens/Posts/Music/shame';
 import Psychic from '../Screens/Posts/Music/psychic';
@@ -45,13 +48,11 @@ import Girlpool from '../Screens/Posts/Music/girlpool';
 //Artists
 import Merrilee from '../Screens/Posts/Artists/merrilee';
 import Amy from '../Screens/Posts/Artists/amy';
-import Alyssa from '../Screens/Posts/Artists/alyssa';
 import Andrea from '../Screens/Posts/Artists/andrea';
 import Byron from '../Screens/Posts/Artists/byron';
 import Caroline from '../Screens/Posts/Artists/caroline';
 import Chris from '../Screens/Posts/Artists/chris';
 import Christina from '../Screens/Posts/Artists/christina';
-import Evan from '../Screens/Posts/Artists/evan';
 import Gaijin from '../Screens/Posts/Artists/gaijin';
 import Hannah from '../Screens/Posts/Artists/hannah';
 import Katelyn from '../Screens/Posts/Artists/katelyn';
@@ -60,16 +61,12 @@ import Logan from '../Screens/Posts/Artists/logan';
 import Lucy from '../Screens/Posts/Artists/lucy';
 import Marbles from '../Screens/Posts/Artists/marbles';
 import Rachel from '../Screens/Posts/Artists/rachel';
-import Reins from '../Screens/Posts/Artists/reins';
 import Rizzo from '../Screens/Posts/Artists/rizzo';
-import Ryan from '../Screens/Posts/Artists/ryan';
-import Sara from '../Screens/Posts/Artists/sara';
 import Sarahr from '../Screens/Posts/Artists/sarahr';
 import William from '../Screens/Posts/Artists/williamwebb';
 import Kat from '../Screens/Posts/Artists/kat';
 import Reed from '../Screens/Posts/Artists/reed';
 //Photography
-import Gon from '../Screens/Posts/Photography/gon';
 import Sandlings from '../Screens/Posts/Photography/sandlings';
 import Blacklivesmatter from '../Screens/Posts/Photography/blacklivesmatter';
 import Brianarnold from '../Screens/Posts/Photography/brianarnold';
@@ -121,7 +118,9 @@ const MainApp = () => {
           <Scene key="photofour" component={PhotoFour} navBar={MainTabBar}/>
           <Scene key="music" component={Music} navBar={MainTabBar}/>
           <Scene key="musictwo" component={MusicTwo} navBar={MainTabBar}/>
-          <Scene key="food" component={Food} navBar={MainTabBar}/>
+          <Scene key="tattoo" component={Tattoo} navBar={MainTabBar}/>
+          <Scene key="triple" component={Triple} navBar={MainTabBar}/>
+          <Scene key="sanctum" component={Sanctum} navBar={MainTabBar}/>
           <Scene key="elsepage" component={ElsePage} navBar={MainTabBar}/>
           <Scene key="directories" component={Directories} navBar={MainTabBar}/>
           <Scene key="contact" component={Contact} navBar={MainTabBar}/>
@@ -129,7 +128,6 @@ const MainApp = () => {
           <Scene key="menu" component={PopMenu} navBar={popMenuTab} direction="vertical"/>
           <Scene key="balloons" component={Balloons} navBar={popMenuTab} direction="vertical"/>
           <Scene key="ytg" component={Ygt} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="blood" component={Blood} navBar={popMenuTab} direction="vertical"/>
           <Scene key="marriage" component={Marriage} navBar={popMenuTab} direction="vertical"/>
           <Scene key="gag" component={Gag} navBar={popMenuTab} direction="vertical"/>
           <Scene key="laundry" component={LaundryPunk} navBar={popMenuTab} direction="vertical"/>
@@ -137,7 +135,6 @@ const MainApp = () => {
           <Scene key="timepretend" component={TimePretend} navBar={popMenuTab} direction="vertical"/>
           <Scene key="lostsloss" component={LostSloss} navBar={popMenuTab} direction="vertical"/>
           <Scene key="sleepdrive" component={SleepDrive} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="gon" component={Gon} navBar={popMenuTab} direction="vertical"/>
           <Scene key="upperRoom" component={UpperRoom} navBar={popMenuTab} direction="vertical"/>
           <Scene key="merrilee" component={Merrilee} navBar={popMenuTab} direction="vertical"/>
           <Scene key="sandlings" component={Sandlings} navBar={popMenuTab} direction="vertical"/>
@@ -167,13 +164,11 @@ const MainApp = () => {
           <Scene key="wisconsinwinters" component={Wisconsinwinters} navBar={popMenuTab} direction="vertical"/>
           <Scene key="womensmarch" component={Womensmarch} navBar={popMenuTab} direction="vertical"/>
           <Scene key="yoavpelli" component={Yoavpelli} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="alyssa" component={Alyssa} navBar={popMenuTab} direction="vertical"/>
           <Scene key="amy" component={Amy} navBar={popMenuTab} direction="vertical"/>
           <Scene key="andrea" component={Andrea} navBar={popMenuTab} direction="vertical"/>
           <Scene key="byron" component={Byron} navBar={popMenuTab} direction="vertical"/>
           <Scene key="caroline" component={Caroline} navBar={popMenuTab} direction="vertical"/>
           <Scene key="chris" component={Chris} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="evan" component={Evan} navBar={popMenuTab} direction="vertical"/>
           <Scene key="gaijin" component={Gaijin} navBar={popMenuTab} direction="vertical"/>
           <Scene key="hannah" component={Hannah} navBar={popMenuTab} direction="vertical"/>
           <Scene key="katelyn" component={Katelyn} navBar={popMenuTab} direction="vertical"/>
@@ -182,25 +177,23 @@ const MainApp = () => {
           <Scene key="lucy" component={Lucy} navBar={popMenuTab} direction="vertical"/>
           <Scene key="marbles" component={Marbles} navBar={popMenuTab} direction="vertical"/>
           <Scene key="rachel" component={Rachel} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="reins" component={Reins} navBar={popMenuTab} direction="vertical"/>
           <Scene key="rizzo" component={Rizzo} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="ryan" component={Ryan} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="sara" component={Sara} navBar={popMenuTab} direction="vertical"/>
           <Scene key="sarahr" component={Sarahr} navBar={popMenuTab} direction="vertical"/>
           <Scene key="william" component={William} navBar={popMenuTab} direction="vertical"/>
           <Scene key="reed" component={Reed} navBar={popMenuTab} direction="vertical"/>
           <Scene key="kat" component={Kat} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="chroma" component={Erotica} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="heirloom" component={Heirloom} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="pho" component={Pho} navBar={popMenuTab} direction="vertical"/>
           <Scene key="lewis" component={Lewis} navBar={popMenuTab} direction="vertical"/>
-          <Scene key="carrigans" component={Carrigans} navBar={popMenuTab} direction="vertical"/>
           <Scene key="girlpool" component={Girlpool} navBar={popMenuTab} direction="vertical"/>
           <Scene key="snow" component={Snow} navBar={popMenuTab} direction="vertical"/>
           <Scene key="shame" component={Shame} navBar={popMenuTab} direction="vertical"/>
           <Scene key="cindy" component={CindyWilson} navBar={popMenuTab} direction="vertical"/>
           <Scene key="twelve" component={TwelveWeeks} navBar={popMenuTab} direction="vertical"/>
-        </Modal>
+          <Scene key="weareone" component={WeAreOne} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="dave" component={DaveTat} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="rizzotat" component={RizzoTat} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="junstintat" component={JustinTat} navBar={popMenuTab} direction="vertical"/>
+          <Scene key="aarontat" component={AaronTat} navBar={popMenuTab} direction="vertical"/>
+      </Modal>
     </Router>
   );
 };
