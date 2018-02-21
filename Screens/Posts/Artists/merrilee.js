@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, Image, Text, TouchableOpacity, ScrollView} from 'react-native';
+import {View, Image, Text, TouchableOpacity, ScrollView, Linking} from 'react-native';
 import Cstyles from '../../styles/common';
-import ImageSlider from 'react-native-image-slider';
-
+import ImageSlider from '../../Slider/slider';
 class Merrilee extends React.Component {
   render() {
     return (
@@ -11,7 +10,6 @@ class Merrilee extends React.Component {
           <View style={Cstyles.photoSeriesPage}>
             <View style={Cstyles.pieceTitleAbove}>
               <Text style={Cstyles.photoSeriesTitle}>{"Merrilee Challiss"}</Text>
-              <Text style={Cstyles.photoSeriesSubTitle}>Interview by Jonathan Patrick</Text>
               <Text style={Cstyles.photoSeriesSubTitlePhotographer}>Photography by Mateo Montoya</Text>
             </View>
             <View style={Cstyles.headPhotoContainer}>
@@ -51,7 +49,7 @@ class Merrilee extends React.Component {
               <View style={Cstyles.articleBody}>
                 <View style={Cstyles.articleContent}>
                   <Text style={Cstyles.articleBodyQuestion}>
-                    {"Lots and lots of spiritual and totemic vibes are apparent here in your work."}
+                    {"That's interesting, because early indigenous peoples, immersed in the natural world, expressed that propagation so well in their art; art made from looking to the skies or praising their crop."}
                   </Text>
                   <Text style={Cstyles.articleBodyContent}>
                     {"Well, they were definitely in more of a natural rhythm with all of the systems on earth. There's an archaic revival happening now, there's a mass extinction happening now, and we are also in a technical and informational revolution- so what we're living through is such an insanely chaotic time. I think this return to something that is more primal and more archaic (more rooted in interdependence) is really our only hope forward, because we have to remember that we're all connected. All these ideas have been converging for me as a maker and an artist, which sounds kind of wacky, but the act of putting one sequin on, then another sequin on, and having a breath or a thought in between that, you know, the whole work as a process becomes a meditation, a way to slow time down. It's kind of like my strategy for surviving these challenging times (laughs)."}

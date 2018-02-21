@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, ScrollView, View, TouchableOpacity, Image , ActivityIndicator} from 'react-native';
+import {Text, ScrollView, View, TouchableOpacity, Image , ActivityIndicator, Linking} from 'react-native';
 import Cstyles from './styles/common';
 import { Actions } from 'react-native-router-flux';
 
@@ -35,6 +35,30 @@ class Home extends React.Component {
       <View style={Cstyles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={Cstyles.pageContainer}>
+              <TouchableOpacity activeOpacity={1} onPress={() => Actions.weareone()} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/other/weareone.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Artist to Artist Auction"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"February 23rd"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"SUBMIT YOUR ART FOR FREE!"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} onPress={() => Linking.openURL('https://crisiscenterbham.org/sexual-assault-services/sexual-assault-services.htm/')} style={Cstyles.postTouchable}>
+                <View style={Cstyles.postContainer}>
+                  <Image source={require('../assets/images/other/crisis.jpg')} style={Cstyles.postImage}/>
+                  <View style={Cstyles.subPostContainer}>
+                    <Text style={Cstyles.postTitle}>{"Birmingham Crisis Center"}</Text>
+                    <View style={Cstyles.postSub}>
+                      <Text style={Cstyles.postSubCat}>{"24 Hour Hotline"}</Text>
+                      <Text style={Cstyles.postSubCat}>{"(205) 323-7736"}</Text>
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
               <TouchableOpacity activeOpacity={1} onPress={() => Actions.timepretend()} style={Cstyles.postTouchable}>
                 <View style={Cstyles.postContainer}>
                   <Image source={require('../assets/images/photography/timepretend/home.jpg')} style={Cstyles.postImage}/>
@@ -91,17 +115,6 @@ class Home extends React.Component {
                     <View style={Cstyles.postSub}>
                       <Text style={Cstyles.postSubCat}>{"Antonio Rodriguez"}</Text>
                       <Text style={Cstyles.postSubCat}>{"Photo Story"}</Text>
-                    </View>
-                  </View>
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity activeOpacity={1} onPress={() => Actions.blood()} style={Cstyles.postTouchable}>
-                <View style={Cstyles.postContainer}>
-                  <Image source={require('../assets/images/else/blood/bloodhome.jpg')} style={Cstyles.postImage}/>
-                  <View style={Cstyles.subPostContainer}>
-                    <Text style={Cstyles.postTitle}>{"Blood Equality: A Fight For Human Rights"}</Text>
-                    <View style={Cstyles.postSub}>
-                      <Text style={Cstyles.postSubCat}>{"Jonathan Patrick"}</Text>
                     </View>
                   </View>
                 </View>

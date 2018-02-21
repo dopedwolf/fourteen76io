@@ -1,8 +1,7 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity, ScrollView, Linking} from 'react-native';
 import Cstyles from '../../styles/common';
-import ImageSlider from 'react-native-image-slider';
-
+import ImageSlider from '../../Slider/slider';
 class Rachel extends React.Component {
   render() {
     return (

@@ -16,7 +16,6 @@ class SleepDrive extends React.Component {
               <View style={Cstyles.pieceTitleArticle}>
                 <Text style={Cstyles.photoSeriesTitleItalized}>{"Sleep Drive"}</Text>
                 <Text style={Cstyles.photoSeriesSubTitleAuthor}>Album by Ant'lrd</Text>
-                <Text style={Cstyles.photoSeriesSubTitlePhotographer}>Interview by Jonathan Patrick</Text>
               </View>
               <View style={Cstyles.articleContent}>
                 <Text style={Cstyles.articleBodyContent}>

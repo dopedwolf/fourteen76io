@@ -17,11 +17,11 @@ class PopMenu extends React.Component {
             <TouchableOpacity onPress={() => Actions.photo()}>
               <Text style={Cstyles.popMenuItems}>Photo</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => Actions.food()}>
-              <Text style={Cstyles.popMenuItems}>Food</Text>
-            </TouchableOpacity>
             <TouchableOpacity onPress={() => Actions.calendar()}>
               <Text style={Cstyles.popMenuItems}>Calendar</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => Linking.openURL('https://www.fourteen76.com')}>
+              <Text style={Cstyles.popMenuItems}>Website</Text>
             </TouchableOpacity>
           </View>
           <View style={Cstyles.popMenuSideTwo}>
@@ -32,7 +32,7 @@ class PopMenu extends React.Component {
               <Text style={Cstyles.popMenuItems}>Music</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => Actions.elsepage()}>
-              <Text style={Cstyles.popMenuItems}>!Else¡</Text>
+              <Text style={Cstyles.popMenuItems}>Ragtag</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => Actions.contact()}>
               <Text style={Cstyles.popMenuItemsS}>Submit</Text>

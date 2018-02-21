@@ -7,7 +7,7 @@ export default class AppLoading extends React.Component {
   render() {
     return (
       <View style={styles.loadingScreen}>
-        <Image source={require('../assets/gifs/vladsplit.gif')}/>
+        <Image source={require('../assets/gifs/vladsplit.svg')}/>
       </View>
     );
   }

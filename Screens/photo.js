@@ -71,18 +71,6 @@ class Photo extends React.Component {
                 </View>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity activeOpacity={1} onPress={() => Actions.gon()} style={Cstyles.postTouchable}>
-              <View style={Cstyles.postContainer}>
-                <Image source={require('../assets/images/gon.jpg')} style={Cstyles.postImage}/>
-                <View style={Cstyles.subPostContainer}>
-                  <Text style={Cstyles.postTitle}>{"'Gon"}</Text>
-                  <View style={Cstyles.postSub}>
-                    <Text style={Cstyles.postSubCat}>{"Jonathan Patrick"}</Text>
-                    <Text style={Cstyles.postSubCat}>{"Photography"}</Text>
-                  </View>
-                </View>
-              </View>
-            </TouchableOpacity>
             <TouchableOpacity activeOpacity={1} onPress={() => Actions.dietrying()} style={Cstyles.postTouchable}>
               <View style={Cstyles.postContainer}>
                 <Image source={require('../assets/images/photography/die.jpg')} style={Cstyles.postImage}/>

@@ -4,8 +4,8 @@
     "description": "Fourteen76 showcases the intersectional talent and news hidden in the cracks of Birmingham and surrounding areas. While providing a hub for complete artistic expression and attempting to close the wide gap between the art scene and the community.",
     "slug": "fourteen76",
     "privacy": "public",
-    "sdkVersion": "20.0.0",
-    "version": "1.0.0",
+    "sdkVersion": "23.0.0",
+    "version": "1.0.3",
     "primaryColor": "#f9f9f9",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
@@ -13,11 +13,14 @@
       "backgroundColor": "#f2b1bd"
     },
     "android": {
-      "package": "com.fourteen76.fourteen76"
+      "package": "com.fourteen76.fourteen76",
+      "versionCode": 2,
+      "icon": "./assets/icons/icon.png"
     },
-    "loading": {
-      "icon": "./assets/icons/load-icon.png",
-      "backgroundColor": "#f2b1bd"
+    "splash": {
+      "image": "./assets/gifs/vlad.png",
+      "backgroundColor": "#FFFFFF",
+      "resizeMode": "contain"
     },
     "packagerOpts": {
       "assetExts": [
@@ -26,7 +29,7 @@
       ]
     },
     "ios": {
-      "bundleIdentifier": "com.fourteen76.fourteen76",
+      "bundleIdentifier": "com.1476.fourteen76",
       "supportsTablet": true,
     }
   }
